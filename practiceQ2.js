@@ -3,6 +3,7 @@ const toBeFiltered = [7, 9, "hi", 12, "hi", 7, 53];
 
 function removeDuplicatesWSet(anArrayOfValues) {
   const duplicatesRemoved = new Set(anArrayOfValues); // Set returns an object of unique elements
+  // {7, 9, "hi", 12, 53};
   return [...duplicatesRemoved]; // Spread operator converts the object results into an array
 }
 
