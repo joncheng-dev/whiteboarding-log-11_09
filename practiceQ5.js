@@ -3,12 +3,12 @@
 
 // Bubble Sort - compares two adjacent elements. If they're not in order, then they are swapped. This loops through the array until it is complete.
 const sampleArray = [9, 2, 7, 12];
-const sampleArray2 = [9, 1, 8, 2, 7, 3, 6, 4, 5];
+const sampleArray2 = [9, 1, 8, 2, 12, 15, 7, 3, 6, 4, 5];
 
 function bubbleSort(arrayOfNumbers) {
   for (let i = 0; i < arrayOfNumbers.length - 1; i++) {
     // outer loop has -1 length because we don't want to move ahead of the other loop
-    for (let j = 0; j < arrayOfNumbers.length - i - 1; j++) {
+    for (let j = 0; j < arrayOfNumbers.length - 1; j++) {
       // compare the first two adjacent elements. Is the first element greater than the second element?
       if (arrayOfNumbers[j] > arrayOfNumbers[j + 1]) {
         // if it is, swap places
@@ -21,7 +21,7 @@ function bubbleSort(arrayOfNumbers) {
   return arrayOfNumbers;
 }
 
-console.log(bubbleSort(sampleArray));
+console.log(bubbleSort(sampleArray2));
 
 // --------------------------------------------------------------------------------------
 // function sortFromLeastToGreatest(arrayOfNumbers) {
