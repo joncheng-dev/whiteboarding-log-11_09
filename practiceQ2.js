@@ -22,3 +22,20 @@ function removeDuplicatesWFilter(anArrayOfValues) {
 // expected results: [7, 9, "hi", 12, 53]
 // console.log(removeDuplicatesWFilter(toBeFiltered));
 // -------------------------------------------------------------
+
+// Using Recursion
+function removeDupesRecursive(string) {
+  // termination case
+  if (typeof string != "string") {
+    return;
+  }
+  // base case
+  if (string === "") {
+    return "";
+  } else if (string.indexOf(" ") != -1) {
+    // if there IS a space
+    return string.slice(0, string.indexOf(" ")) + "%20" + replaceSpaces(string.slice(string.indexOf(" ")).trim());
+  } else {
+    return string;
+  }
+}

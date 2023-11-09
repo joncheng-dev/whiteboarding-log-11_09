@@ -12,7 +12,9 @@ const searchString4 = "987654321";
 const searchString5 = "abcdefg212";
 
 // Solution ------------------------------------------------------------------------------------------
-function checkForUniqueness(string) {
+function checkForUniqueness(someString) {
+  let string = someString.toLowerCase();
+  console.log(string);
   for (let i = 0; i < string.length; i++) {
     if (string.substring(i + 1).includes(string[i])) {
       return false;
@@ -22,9 +24,10 @@ function checkForUniqueness(string) {
 }
 // Solution ------------------------------------------------------------------------------------------
 
-// const testString = "hello";
+const testString = "hello";
+const testString2 = "";
 // console.log(`${testString} Substring 0: ${testString.substring(0)}`);
 // console.log(`${testString} Substring 1: ${testString.substring(1)}`);
 // console.log(`${testString} Substring 2: ${testString.substring(2)}`);
 // console.log(`${testString} Substring 3: ${testString.substring(3)}`);
-console.log(checkForUniqueness(searchString5));
+console.log(checkForUniqueness(testString));
