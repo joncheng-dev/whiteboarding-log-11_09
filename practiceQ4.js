@@ -13,6 +13,7 @@ const searchString5 = "abcdefg212";
 
 // Solution ------------------------------------------------------------------------------------------
 function checkForUniqueness(someString) {
+  // change all letters to lowercase
   let string = someString.toLowerCase();
   console.log(string);
   for (let i = 0; i < string.length; i++) {
